@@ -39,18 +39,18 @@ ul {
   padding: 0 15px;
   /*outline: 1px solid red;*/
   margin: 0 auto;
-  width: 1200px;
-}
-
-@media screen and (max-width: 767px) {
-  .header__container, .hero__container, .quality__container, .specialization__container, .employees__container {
-    width: 450px;
-  }
+  max-width: 450px;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1599px) {
   .header__container, .hero__container, .quality__container, .specialization__container, .employees__container {
     width: 738px;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .header__container, .hero__container, .quality__container, .specialization__container, .employees__container {
+    width: 1200px;
   }
 }
 
@@ -535,7 +535,7 @@ ul {
 }
 
 .hero__container {
-  width: 390px;
+  max-width: 390px;
 }
 
 @media screen and (min-width: 1599px) {
@@ -1120,7 +1120,7 @@ ul {
 
 .employees__img {
   display: block;
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 

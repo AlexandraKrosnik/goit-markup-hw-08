@@ -67,7 +67,8 @@
   }
   &__container {
     @extend %container;
-    width: 390px;
+    max-width: 390px;
+
     @media screen and (min-width: 1599px) {
       width: 696px;
     }
