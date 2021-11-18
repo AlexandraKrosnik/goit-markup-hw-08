@@ -39,18 +39,18 @@ ul {
   padding: 0 15px;
   /*outline: 1px solid red;*/
   margin: 0 auto;
-  width: 450px;
+  max-width: 450px;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1599px) {
   .header__container, .hero__container, .quality__container, .specialization__container, .employees__container, .customers__container {
-    width: 738px;
+    max-width: 738px;
   }
 }
 
 @media screen and (min-width: 1600px) {
   .header__container, .hero__container, .quality__container, .specialization__container, .employees__container, .customers__container {
-    width: 1200px;
+    max-width: 1200px;
   }
 }
 
@@ -487,7 +487,7 @@ ul {
 }
 
 .hero {
-  width: 480px;
+  max-width: 480px;
   margin: 0 auto;
   padding: 118px 0;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../../images/hero_mobile.jpg");
@@ -506,7 +506,7 @@ ul {
 
 @media screen and (min-width: 767px) {
   .hero {
-    width: 768px;
+    max-width: 768px;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../../images/hero_tablet.jpg");
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/hero_tablet.jpg");
   }
@@ -522,7 +522,7 @@ ul {
 @media screen and (min-width: 1599px) {
   .hero {
     padding: 200px 0;
-    width: 1600px;
+    max-width: 1600px;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../../images/hero.jpg");
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/hero.jpg");
   }
@@ -536,12 +536,12 @@ ul {
 }
 
 .hero__container {
-  width: 390px;
+  max-width: 390px;
 }
 
 @media screen and (min-width: 1599px) {
   .hero__container {
-    width: 696px;
+    max-width: 696px;
   }
 }
 
@@ -1177,6 +1177,9 @@ ul {
   .customers__list {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin: -15px;
   }
 }
