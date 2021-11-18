@@ -15,9 +15,6 @@
   }
 
   &__nav {
-    @media screen and (min-width: 768px) {
-      margin-right: 84px;
-    }
   }
   &__list {
     @media screen and (min-width: 768px) {
@@ -51,6 +48,24 @@
     }
   }
 
+  &__svg--email {
+    width: 14px;
+    height: 10px;
+
+    @media screen and (min-width: 1600px) {
+      width: 16px;
+      height: 12px;
+    }
+  }
+  &__svg--phone {
+    width: 10px;
+    height: 14px;
+
+    @media screen and (min-width: 1600px) {
+      width: 12px;
+      height: 16px;
+    }
+  }
   &__link--inf:focus > &__svg,
   &__link--inf:hover > &__svg {
     fill: currentColor;
@@ -260,6 +275,8 @@
   @media screen and (min-width: 768px) {
     display: flex;
     align-items: center;
+    font-size: 12px;
+    line-height: 1.17;
   }
 
   @media screen and (min-width: 1600px) {
