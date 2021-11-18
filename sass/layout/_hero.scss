@@ -1,5 +1,5 @@
 .hero {
-  max-width: 480px;
+  width: 480px;
   margin: 0 auto;
   padding: 118px 0;
   background-image: linear-gradient(
@@ -24,7 +24,7 @@
   }
 
   @media screen and (min-width: 767px) {
-    max-width: 768px;
+    width: 768px;
     background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.4),
@@ -46,7 +46,7 @@
 
   @media screen and (min-width: 1599px) {
     padding: 200px 0;
-    max-width: 1600px;
+    width: 1600px;
     background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.4),
@@ -67,7 +67,7 @@
   }
   &__container {
     @extend %container;
-    max-width: 390px;
+    width: 390px;
 
     @media screen and (min-width: 1599px) {
       width: 696px;
