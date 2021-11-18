@@ -112,7 +112,7 @@
     top: 10px;
     right: 15px;
   }
-  &__button--burger.is-open .body {
+  &__menu.is-open .body {
     overflow: hidden;
   }
 
@@ -132,7 +132,8 @@
 
   &__menu.is-open {
     @media screen and (max-width: 767px) {
-      display: block;
+      display: flex;
+      flex-direction: column;
       position: fixed;
       top: 0;
       left: 0;
@@ -141,6 +142,7 @@
       opacity: 1;
       background-color: var(--primary-white-color);
       z-index: 100;
+      overflow-y: hidden;
 
       padding: 48px 40px;
     }
@@ -152,20 +154,23 @@
       display: flex;
       margin-top: 64px;
       vertical-align: bottom;
+      flex-wrap: wrap;
     }
   }
 
   &__feedback {
     @media screen and (max-width: 767px) {
-      position: absolute;
+      /*position: absolute;
       left: 40px;
-      bottom: 48px;
+      bottom: 48px;*/
+      margin-top: auto;
     }
   }
 
   &__networks {
     position: relative;
     display: flex;
+    margin-bottom: 10px;
 
     &:not(:last-child) {
       margin-right: 10px;
@@ -265,7 +270,10 @@
   &:focus {
     color: var(--accent-color);
   }
-
+  @media screen and (max-width: 379px) {
+    font-size: 8vw;
+    line-height: 1.17;
+  }
   @media screen and (max-width: 767px) {
     font-size: 24px;
     line-height: 1.17;
