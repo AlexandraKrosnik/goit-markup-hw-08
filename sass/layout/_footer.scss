@@ -1,0 +1,227 @@
+.footer {
+  @extend %section;
+  background-color: var(--hero-footer-bg);
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  &__container {
+    @extend %container;
+    display: flex;
+    align-items: center;
+
+    @media screen and (max-width: 1599px) {
+      flex-direction: column;
+    }
+
+    @media screen and (min-width: 1600px) {
+      align-items: baseline;
+    }
+  }
+
+  &__content:not(:last-child) {
+    @media screen and (max-width: 1599px) {
+      margin-bottom: 60px;
+    }
+  }
+
+  &__content--right {
+    @media screen and (max-width: 1599px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    @media screen and (min-width: 1600px) {
+      margin-right: 85px;
+    }
+  }
+
+  &__group {
+    width: 100%;
+    display: flex;
+
+    @media screen and (max-width: 767px) {
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 60px;
+    }
+
+    @media screen and (max-width: 1599px) {
+      justify-content: space-between;
+    }
+  }
+
+  &__content--networks {
+    width: 206px;
+  }
+
+  &__content--left {
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (max-width: 767px) {
+      align-items: center;
+      width: 100%;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1599px) {
+      align-items: center;
+      width: 450px;
+    }
+
+    @media screen and (min-width: 1600px) {
+      justify-self: end;
+      margin-left: auto;
+    }
+  }
+
+  &__address {
+    margin-top: 20px;
+    color: var(--addres-color);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+
+    @media screen and (max-width: 1599px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__text {
+    color: var(--primary-white-color);
+    margin-bottom: 9px;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+  }
+
+  &__list {
+    @media screen and (max-width: 1599px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__item:last-child {
+    margin-top: 9px;
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    color: var(--primary-text-color);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
+  }
+
+  &__content--networks {
+    width: 206px;
+
+    @media screen and (max-width: 1599px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__text--networks {
+    margin-bottom: 20px;
+
+    color: var(--primary-white-color);
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.15;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }
+
+  &__content-button-input {
+    display: flex;
+
+    @media screen and (max-width: 1599px) {
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+  }
+  &__label {
+    font-weight: bold;
+    margin-bottom: 20px;
+
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--primary-white-color);
+  }
+
+  &__input {
+    display: block;
+    height: 50px;
+    padding-left: 16px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    outline: none;
+    background-color: var(--hero-footer-bg);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    color: var(--primary-white-color);
+    box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.15));
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &::placeholder {
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 1.25;
+      letter-spacing: 0.03em;
+
+      color: var(--addres-color);
+    }
+
+    &:hover,
+    &:focus {
+      border-color: var(--primary-white-color);
+    }
+
+    @media screen and (max-width: 1599px) {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+
+    @media screen and (min-width: 1600px) {
+      width: 358px;
+      margin-right: 12px;
+    }
+  }
+
+  &__button {
+    @extend %button;
+  }
+
+  &__icon {
+    fill: var(--primary-white-color);
+    background-color: transparent;
+    margin-left: 10px;
+  }
+}

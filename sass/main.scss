@@ -1,12 +1,14 @@
 @import 'base/colors';
-@import 'base//common';
-@import 'components/logo';
-@import 'layout/header';
-@import 'layout/hero';
-@import 'components/modal';
-@import 'components/form';
-@import 'layout/section-quality';
-@import 'layout/section-specialization';
+@import 'base/common';
+
+//components
 @import 'components/networks';
-@import 'layout/section-employee';
-@import 'layout/section-customers';
+@import 'components/logo';
+
+//layout
+@import 'layout/header';
+@import 'layout/footer';
+
+//pages
+@import 'pages/index';
+@import 'pages/portfolio';
