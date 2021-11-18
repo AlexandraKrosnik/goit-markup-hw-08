@@ -195,19 +195,54 @@
                 <h2 class="specialization__title">Чем мы занимаемся</h2>
                 <ul class="specialization__list list">
                     <li class="specialization__item">
-                        <img src="./images/1.jpg" alt="Работа над кодом" width="370" class="specialization__img">
+                        <!--<img src="./images/1.jpg" alt="Работа над кодом" width="370" class="specialization__img">-->
+                        <picture>
+                            <source srcset="
+                                  ./images/1.webp 320w,
+                                   ./images/1_2x.webp 640w                                  
+                                " type="image/webp" />
+                        
+                            <img srcset="
+                                  ./images/1.jpg 320w,
+                                  ./images/1@2x.jpg 640w,                                 
+                                " src="./images/1.jpg" alt="Работа над кодом" width="370" class="specialization__img"/>
+                        </picture>
                         <div class="specialization__content">
                             <p class="specialization__text">Десктопные приложения</p>
                         </div>
                     </li>
                     <li class="specialization__item">
-                        <img src="./images/2.jpg" alt="Работа над макетом" width="370" class="specialization__img">
+                        <!--<img src="./images/2.jpg" alt="Работа над макетом" width="370" class="specialization__img">-->
+                        <picture>
+                            <source srcset="
+                                ./images/2.webp 320w,
+                                ./images/2_2x.webp 640w                                  
+                                " type="image/webp" />
+                        
+                            <img srcset="
+                                ./images/2.jpg 320w,
+                                 ./images/2@2x.jpg 640w,                                 
+                                " src="./images/2.jpg" alt="Работа над макетом" width="370"
+                                class="specialization__img" />
+                        </picture>
                         <div class="specialization__content">
                             <p class="specialization__text">Мобильные приложения</p>
                         </div>
                     </li>
                     <li class="specialization__item">
-                        <img src="./images/3.jpg" alt="Работа над цветом" width="370" class="specialization__img">
+                        <!--<img src="./images/3.jpg" alt="Работа над цветом" width="370" class="specialization__img">-->
+                        <picture>
+                            <source srcset="
+                                ./images/3.webp 320w,
+                                ./images/3_2x.webp 640w                                  
+                                " type="image/webp" />
+                        
+                            <img srcset="
+                                 ./images/3.jpg 320w,
+                                 ./images/3@2x.jpg 640w,                                 
+                                 " src="./images/3.jpg" alt="Работа над цветом" width="370"
+                                class="specialization__img" />
+                        </picture>
                         <div class="specialization__content">
                             <p class="specialization__text">Дизайнерские решения</p>
                         </div>
@@ -222,7 +257,18 @@
                 <h2 class="employees__title">Наша команда</h2>
                 <ul class = "employees__list list">
                     <li class="employees__item">
-                        <img src="./images/p1.jpg" alt="Игорь Демьяненко" width="270" height="260" class="employees__img">
+                        <!--<img src="./images/p1.jpg" alt="Игорь Демьяненко" width="270" height="260" class="employees__img">-->
+                        <picture>
+                            <source srcset="
+                                  ./images/p1.webp 320w,
+                                  ./images/p1_2x.webp 640w
+                                " type="image/webp" />
+                        
+                            <img srcset="
+                                  ./images/p1.jpg 320w,
+                                  ./images/p1@2x.jpg 640w
+                                " src="./images/p1.jpg" alt="Игорь Демьяненко" sizes="(min-width: 1600px) 25vw, (min-width: 768px) 50vw,  100vw" class="employees__img"/>
+                        </picture>
                         <div class="employees__content">
                             <h3 class="employees__name">Игорь Демьяненко</h3>
                             <p class="employees__position">Product Designer</p>
@@ -259,7 +305,19 @@
                         </div>
                     </li>
                     <li class="employees__item">
-                        <img src="./images/p2.jpg" alt="Ольга Репина" width="270" height="260" class="employees__img">
+                        <!--<img src="./images/p2.jpg" alt="Ольга Репина" width="270" height="260" class="employees__img">-->
+                        <picture>
+                            <source srcset="
+                                   ./images/p2.webp 320w,
+                                   ./images/p2@2x.webp 640w
+                                 " type="image/webp" />
+                        
+                            <img srcset="
+                                   ./images/p2.jpg 320w,
+                                   ./images/p2@2x.jpg 640w
+                                 " src="./images/p1.jpg" alt="Ольга Репина"
+                                sizes="(min-width: 1600px) 25vw, (min-width: 768px) 50vw,  100vw" class="employees__img" />
+                        </picture>
                         <div class="employees__content">
                             <h3 class="employees__name">Ольга Репина</h3>
                             <p class="employees__position">Frontend Developer</p>
@@ -296,7 +354,20 @@
                         </div>
                     </li>
                     <li class="employees__item">
-                        <img src="./images/p3.jpg" alt="Николай Тарасов" width="270" height="260" class="employees__img">
+                        <!--<img src="./images/p3.jpg" alt="Николай Тарасов" width="270" height="260" class="employees__img">-->
+
+                        <picture>
+                            <source srcset="
+                                  ./images/p3.webp 320w,
+                                  ./images/p3@2x.webp 640w
+                                " type="image/webp" />
+                        
+                            <img srcset="
+                                  ./images/p3.jpg 320w,
+                                  ./images/p3@2x.jpg 640w
+                                " src="./images/p1.jpg" alt="Николай Тарасов"
+                                sizes="(min-width: 1600px) 25vw, (min-width: 768px) 50vw,  100vw" class="employees__img" />
+                        </picture>
                         <div class="employees__content">
                             <h3 class="employees__name">Николай Тарасов</h3>
                             <p class="employees__position">Marketing</p>
@@ -333,7 +404,19 @@
                         </div>
                     </li>
                     <li class="employees__item">
-                        <img src="./images/p4.jpg" alt="Михаил Ермаков" width="270" height="260" class="employees__img">
+                        <!--<img src="./images/p4.jpg" alt="Михаил Ермаков" width="270" height="260" class="employees__img">-->
+                        <picture>
+                            <source srcset="
+                               ./images/p4.webp 320w,
+                               ./images/p4@2x.webp 640w
+                             " type="image/webp" />
+                        
+                            <img srcset="
+                               ./images/p4.jpg 320w,
+                               ./images/p4@2x.jpg 640w
+                             " src="./images/p1.jpg" alt="Михаил Ермаков"
+                                sizes="(min-width: 1600px) 25vw, (min-width: 768px) 50vw,  100vw" class="employees__img" />
+                        </picture>
                         <div class="employees__content">
                             <h3 class="employees__name">Михаил Ермаков</h3>
                             <p class="employees__position">UI Designer</p>
