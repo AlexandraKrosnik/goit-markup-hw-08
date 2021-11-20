@@ -11,6 +11,10 @@
 
     &:not(:last-child) {
       margin-bottom: 28px;
+
+      @media screen and (max-width: 479px) {
+        margin-bottom: 20px;
+      }
     }
   }
 
@@ -107,6 +111,10 @@
     color: var(--primary-text-color);
 
     margin-bottom: 30px;
+    @media screen and (max-width: 479px) {
+      font-size: 9px;
+      letter-spacing: 0.02em;
+    }
 
     @media screen and (min-width: 1600px) {
       font-size: 14px;
@@ -122,6 +130,12 @@
     text-decoration-line: underline;
     color: var(--accent-color);
     margin-left: 3px;
+
+    @media screen and (max-width: 479px) {
+      margin-left: 1px;
+      font-size: 8px;
+      letter-spacing: 0.02em;
+    }
 
     @media screen and (min-width: 1600px) {
       font-size: 14px;

@@ -261,9 +261,6 @@
     @media screen and (max-width: 767px) {
       padding-bottom: 32px;
     }
-    @media screen and (min-width: 768px) {
-      padding-bottom: 10px;
-    }
   }
 
   &:hover,
@@ -284,6 +281,7 @@
     align-items: center;
     font-size: 12px;
     line-height: 1.17;
+    padding-bottom: 10px;
   }
 
   @media screen and (min-width: 1600px) {
