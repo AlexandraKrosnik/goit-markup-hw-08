@@ -3,10 +3,14 @@
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
+    //align-items: stretch;
     /*outline: 1px solid red;*/
   }
 
   &__item {
+    //display: flex;
+    flex-grow: 0;
+
     @media screen and (min-width: 768px) and (max-width: 1599px) {
       width: calc((100% - 30px) / 2);
     }
@@ -59,13 +63,14 @@
     overflow: hidden;
   }
   &__content--bottom {
+    display: block;
     padding: 20px 24px;
     border-right: 1px solid var(--border-color);
     border-left: 1px solid var(--border-color);
     border-bottom: 1px solid var(--border-color);
 
     @media screen and (min-width: 768px) and (max-width: 1599px) {
-      height: 146px;
+      height: calc(100% - 267px);
     }
   }
   &__overlay {
