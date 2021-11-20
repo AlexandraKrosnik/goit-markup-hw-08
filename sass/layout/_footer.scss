@@ -45,8 +45,9 @@
       margin-bottom: 60px;
     }
 
-    @media screen and (max-width: 1599px) {
+    @media screen and (min-width: 768px) and (max-width: 1599px) {
       justify-content: space-between;
+      align-items: baseline;
     }
   }
 
@@ -69,8 +70,9 @@
     }
 
     @media screen and (min-width: 1600px) {
-      justify-self: end;
+      //justify-self: end;
       margin-left: auto;
+      align-self: self-start;
     }
   }
 
