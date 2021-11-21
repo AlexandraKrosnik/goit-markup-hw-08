@@ -25,6 +25,7 @@
 
   @media screen and (min-width: 481px) {
     max-width: 768px;
+    max-height: 400px;
     background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.4),
@@ -64,6 +65,10 @@
         ),
         url('../images/hero@2x.jpg');
     }
+  }
+
+  @media screen and (min-width: 1600px) {
+    max-height: 600px;
   }
   &__container {
     @extend %container;

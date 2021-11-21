@@ -34,6 +34,7 @@
   &__list > &__items--contacts:not(:last-child) {
     @media screen and (min-width: 768px) and (max-width: 1599px) {
       margin-right: 0px;
+      margin-bottom: 10px;
     }
   }
   &__svg {
@@ -263,6 +264,14 @@
     @media screen and (max-width: 767px) {
       padding-bottom: 32px;
     }
+    @media screen and (min-width: 768px) and (max-width: 1600px) {
+      padding-top: 20px;
+    }
+  }
+  .header__items:last-child & {
+    @media screen and (min-width: 768px) and (max-width: 1600px) {
+      padding-bottom: 20px;
+    }
   }
 
   &:hover,
@@ -283,7 +292,7 @@
     align-items: center;
     font-size: 12px;
     line-height: 1.17;
-    padding-bottom: 10px;
+    //padding-bottom: 10px;
   }
 
   @media screen and (min-width: 1600px) {
