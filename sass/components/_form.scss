@@ -182,5 +182,9 @@
     @extend %button;
     margin: 0 auto;
     background-color: #188ce8;
+
+    @media screen and (max-width: 250px) {
+      width: 100%;
+    }
   }
 }

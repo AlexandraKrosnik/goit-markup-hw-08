@@ -348,11 +348,30 @@ ul {
 
 @media screen and (max-width: 767px) {
   .header__menu {
-    display: none;
-    -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 48px 40px;
+    background-color: var(--primary-white-color);
+    z-index: 100;
+    -webkit-animation-name: Menu-opacity-none;
+            animation-name: Menu-opacity-none;
+    -webkit-animation-duration: 250ms;
+            animation-duration: 250ms;
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+    -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
 
@@ -373,29 +392,13 @@ ul {
 
 @media screen and (max-width: 767px) {
   .header__menu.is-open {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
     -webkit-animation-name: Menu-opacity;
             animation-name: Menu-opacity;
     -webkit-animation-duration: 250ms;
             animation-duration: 250ms;
-    background-color: var(--primary-white-color);
-    z-index: 100;
     overflow-y: hidden;
     opacity: 1;
-    -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    padding: 48px 40px;
+    visibility: visible;
   }
 }
 
@@ -598,6 +601,30 @@ ul {
   }
 }
 
+@-webkit-keyframes Menu-opacity-none {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes Menu-opacity-none {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
 .footer {
   background-color: var(--hero-footer-bg);
   padding-top: 60px;
@@ -679,9 +706,8 @@ ul {
 
 @media screen and (min-width: 768px) and (max-width: 1599px) {
   .footer__group {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
@@ -732,9 +758,6 @@ ul {
 @media screen and (min-width: 1600px) {
   .footer__content--left {
     margin-left: auto;
-    -ms-flex-item-align: self-start;
-        -ms-grid-row-align: self-start;
-        align-self: self-start;
   }
 }
 
@@ -1095,7 +1118,7 @@ ul {
 @media screen and (max-width: 479px) {
   .modal__content {
     padding: 20px;
-    width: 310px;
+    width: 100%;
   }
 }
 
@@ -1364,6 +1387,12 @@ ul {
 .form__button {
   margin: 0 auto;
   background-color: #188ce8;
+}
+
+@media screen and (max-width: 250px) {
+  .form__button {
+    width: 100%;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -1837,7 +1866,16 @@ ul {
 }
 
 .project-cards__link {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   width: 100%;
   height: 100%;
   text-decoration: none;
@@ -1865,9 +1903,18 @@ ul {
   border-bottom: 1px solid var(--border-color);
 }
 
-@media screen and (min-width: 768px) and (max-width: 1599px) {
+@media screen and (min-width: 768px) {
   .project-cards__content--bottom {
-    height: calc(100% - 267px);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
   }
 }
 
